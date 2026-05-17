@@ -662,35 +662,45 @@
       </div>
 
       <div class="contact-form">
-        <div class="form-title">Enquire Now 🎓</div>
-        <div class="form-group">
-          <label>Your Name</label>
-          <input type="text" placeholder="Enter your name">
-        </div>
-        <div class="form-group">
-          <label>Phone Number</label>
-          <input type="tel" placeholder="Your mobile number">
-        </div>
-        <div class="form-group">
-          <label>Course Interested In</label>
-          <select>
-            <option value="">Select a course</option>
-            <option>MS Office</option>
-            <option>Power BI</option>
-            <option>Tally Prime with GST</option>
-            <option>Cloud Accounting</option>
-            <option>C & C++</option>
-            <option>Java & JavaScript</option>
-            <option>Python</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <label>Message (Optional)</label>
-          <textarea placeholder="Any questions or preferred batch timing?"></textarea>
-        </div>
-        <button class="form-submit" onclick="alert('Thank you! We will contact you soon. 📞')">Send Enquiry</button>
-      </div>
+  <div class="form-title">Enquire Now 🎓</div>
+
+  <form action="https://formspree.io/f/mykvgagw" method="POST">
+
+    <div class="form-group">
+      <label>Your Name</label>
+      <input type="text" name="name" placeholder="Enter your name" required>
     </div>
+
+    <div class="form-group">
+      <label>Phone Number</label>
+      <input type="tel" name="phone" placeholder="Your mobile number" required>
+    </div>
+
+    <div class="form-group">
+      <label>Course Interested In</label>
+      <select name="course" required>
+        <option value="">Select a course</option>
+        <option>MS Office</option>
+        <option>Power BI</option>
+        <option>Tally Prime with GST</option>
+        <option>Cloud Accounting</option>
+        <option>C & C++</option>
+        <option>Java & JavaScript</option>
+        <option>Python</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label>Message (Optional)</label>
+      <textarea name="message" placeholder="Any questions or preferred batch timing?"></textarea>
+    </div>
+
+    <button type="submit" class="form-submit">
+      Send Enquiry
+    </button>
+
+  </form>
+</div>
   </div>
 </section>
 
